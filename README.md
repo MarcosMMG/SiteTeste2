@@ -1,117 +1,68 @@
-# JemacPRO
+# JEMAC — Site & Presença Digital
 
-> O sistema operacional do seu negócio dentro do Claude Code.
+> Workspace da JEMAC. Missão atual: **construir o site/portfólio storytelling
+> da JEMAC** e a camada de SEO que leva o negócio ao topo do Google.
 
-Você acaba de instalar o JemacPRO. Em alguns minutos, sua empresa vai
-ter uma memória própria, uma identidade visual aplicada em tudo que
-o sistema gerar, e 17 skills prontas pra fazer marketing, SEO, ads,
-design de interface e operação rodarem com você dirigindo.
+A JEMAC cria sites e portfólios para empresas e melhora a visibilidade
+delas na internet (SEO). Este repositório é a operação por trás disso —
+e o primeiro projeto rodando aqui é o **próprio site da JEMAC**.
 
-Bora voar.
-
----
-
-## Ligando o sistema
-
-Dois caminhos. Escolhe o que combina contigo.
-
-### Pelo Claude (mais rápido)
-
-Abre o Claude Code em qualquer pasta e cola:
-
-```
-Clona o https://github.com/MarcosMMG/JemacPRO.git na pasta atual,
-entra nela e roda o /instalar.
-```
-
-Ele clona, entra na pasta nova e dispara a entrevista de setup. Você
-só responde.
-
-### Pelo terminal (mais previsível)
-
-```
-git clone https://github.com/MarcosMMG/JemacPRO.git
-cd JemacPRO
-code .
-```
-
-Na janela do VS Code que abrir: terminal integrado → `claude` → `/instalar`.
+Metáfora da marca: o beija-flor origami subindo — o cliente sai da
+invisibilidade e chega ao topo do Google.
 
 ---
 
-Quando o `/instalar` terminar, renomeia a pasta `JemacPRO/` pro nome do teu
-negócio (fecha o VS Code, renomeia no Explorer/Finder, abre de novo). A
-pasta não fica como "JemacPRO" — ela é o teu negócio agora.
+## O projeto: site da JEMAC
 
-O `/instalar` roda uma vez só. Te entrevista sobre o negócio, monta a
-memória e configura o sistema. Depois disso, é só usar.
+Site estático de storytelling guiado por scroll (referência:
+[storytelling.noomoagency.com](https://storytelling.noomoagency.com/)),
+com narrativa em 3 atos — **dor** (invisível no Google) → **jornada**
+(site + SEO) → **topo** (1º lugar). Construído pra ranquear: HTML
+semântico, performance, schema e conteúdo.
 
----
+**Plano completo:** [`_memoria/plano-site.md`](_memoria/plano-site.md)
+— conceito, seções, stack, camada de SEO e fases de execução.
 
-## O sistema
-
-**Núcleo** — o jeito de operar o dia a dia
-`/abrir` carrega o contexto antes de cada sessão de trabalho · `/salvar`
-faz commit + push no GitHub · `/atualizar` varre o projeto e atualiza
-a memória · `/novo-projeto` cria pasta isolada pra cada cliente ou
-iniciativa · `/mapear-rotinas` descobre o que você repete e transforma
-em skill personalizada.
-
-**Conteúdo e SEO** — vitrine pública da empresa
-`/carrossel` cria carrosséis 1080×1350 com identidade da marca (com ou
-sem foto IA) · `/publicar-tema` pega um tema e entrega artigo de blog +
-carrossel + 3 legendas amarradas · `/seo` roda fluxo completo de 8 passos
-(demanda, concorrência, GMB, on-page, conteúdo, ads, monitoramento, GEO)
-· `/responder-avaliacoes` escreve respostas humanas pras reviews do
-Google · `/aprovar-post` publica blog + Instagram + Facebook num comando.
-
-**Anúncios pagos** — onde o dinheiro entra
-`/anuncio-google` monta a campanha inteira em CSV pronto pra importar
-no Google Ads Editor · `/relatorio-ads` lê os exports de Google + Meta
-e devolve relatório semanal com alertas e recomendações.
-
-**Produção** — ferramentas do dia a dia
-`/analisar-dados` lê CSV/XLSX/PDF e gera resumo executivo ·
-`/email-profissional` rascunha email a partir de contexto livre.
-
-**Design e interface** — skills globais instaladas no PC
-**UI/UX Pro Max** cobre 67 estilos visuais, 161 paletas, 57 combinações
-de fonte e 21 stacks (React, Next.js, Vue, Svelte, SwiftUI, Flutter...)
-pra planejar, construir e revisar telas · **Motion** anima as interfaces
-que o UI/UX Pro Max constrói — fade-ins, transições de página, scroll e
-gestos, na biblioteca Motion (ex-Framer Motion).
+**Status:** planejamento. Antes de codar, resolver os bloqueadores
+(conteúdo real, cidade-alvo, captação de lead, peso da animação) —
+registrados em [`_memoria/estrategia.md`](_memoria/estrategia.md).
 
 ---
 
-## A tese
+## Estrutura
 
-IA não é uma ferramenta que sua empresa usa. É o sistema operacional em
-que ela roda.
+`_memoria/` — o cérebro do negócio (empresa, preferências, estratégia,
+plano do site). O Claude lê antes de cada resposta.
 
-A diferença não é velocidade. É capacidade nova — uma pessoa com IA
-constrói o que antes exigia time inteiro. Cada processo crítico que hoje
-roda em open loop (decide → executa → não mede → repete cego) vira
-closed loop dentro do JemacPRO (decide → executa → captura → realimenta →
-ajusta sozinho).
+`identidade/` — o rosto da marca (logos, beija-flor origami, favicon,
+paleta). Detalhes em [`identidade/design-guide.md`](identidade/design-guide.md).
+Todo visual respeita isso.
 
-O sistema não substitui você. Vira parte da sua empresa.
+`marketing/`, `saidas/`, `scripts/`, `dados/` — produção e resultados,
+versionados no GitHub.
 
----
-
-## Como o JemacPRO pensa
-
-`_memoria/` é o cérebro. Tudo que importa do seu negócio mora aqui —
-quem é a empresa, como ela fala, o que tá em foco essa semana. O Claude
-lê isso antes de cada resposta. Quanto melhor a memória, melhor o sistema.
-
-`identidade/` é o rosto. Cores, fontes, logo, padrão visual. Todo
-carrossel, slide, peça que o sistema gera respeita isso.
-
-`marketing/`, `saidas/` e `scripts/` são o resultado. O sistema produz,
-versiona no GitHub, fica tudo seu.
+`site/` — o site em si (criado na fase de execução).
 
 ---
 
-## Quando precisar
+## Como isso roda
 
-Projeto interno da JemacPRO.
+Este workspace opera sobre o **JemacPRO** — sistema de skills dentro do
+Claude Code. Os comandos que tocam o dia a dia:
+
+- **`/atualizar`** — varre o projeto e reconcilia a memória
+- **`/salvar`** — commit + push no GitHub
+- **`/seo`** — estratégia de SEO (demanda, concorrência, GMB, ads, GEO)
+- **`seo-tecnico`** — SEO de engenharia (schema, Core Web Vitals, sitemap)
+- **`/carrossel`, `/publicar-tema`, `/aprovar-post`** — conteúdo pras redes
+
+O projeto também empacota skills de design, dev, motion e marketing
+(UI/UX, Motion, frontend, brand) pra construir e animar o site.
+
+---
+
+## Base
+
+Construído sobre o [JemacPRO](https://github.com/MarcosMMG/JemacPRO.git).
+A base é o sistema operacional; este repositório é a JEMAC usando ele
+pra fazer o próprio site.
