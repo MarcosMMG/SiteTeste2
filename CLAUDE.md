@@ -113,3 +113,36 @@ Quando o usuário pedir skill nova:
 4. Se a skill precisar de arquivos de apoio (templates, exemplos),
    criar dentro da pasta da skill
 5. Seguir o fluxo da skill-creator nativa do Claude Code
+
+---
+
+# JEMAC — Contexto do negócio
+
+> Perfil: **criador solo / solopreneur**. Uma pessoa toca tudo.
+
+## O que é esse workspace
+
+Operação da JEMAC. Aqui produzo conteúdo, mantenho o site/portfólio,
+capto clientes e entrego os projetos de presença digital.
+
+## Quem sou
+
+Toco a JEMAC sozinho. Crio sites e portfólios para empresas e melhoro a
+visibilidade delas na internet — posicionamento e visualizações no Google (SEO).
+
+## O que produzo
+
+- Sites e portfólios para empresas clientes
+- Otimização de SEO / visibilidade no Google
+- Meu próprio site de portfólio (vitrine do trabalho)
+
+## Marca
+
+Beija-flor origami laranja + wordmark "JEMAC" geométrico. Laranja #FF6600
+sobre preto ou branco. Detalhes em `identidade/design-guide.md`.
+
+## Regras do sistema
+
+- Conteúdo novo salvar em `marketing/conteudo/<tipo>-<tema>-<data>/`
+- Cada cliente novo vira pasta isolada via `/novo-projeto`
+- Tudo que for visual respeita `identidade/design-guide.md`
