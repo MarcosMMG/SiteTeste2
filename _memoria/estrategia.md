@@ -25,10 +25,9 @@ no mercado de presença digital / SEO.
 
 ## Contexto com prazo
 
-- **LEMBRETE (definido 2026-06-30):** ao abrir o projeto, antes de codar o
-  site, definir os bloqueadores de planejamento:
-  1. Conteúdo real — serviços exatos, oferta/preço, contato, destino do CTA
-  2. Cidade/mercado alvo (trava o SEO local)
-  3. Captação de lead — form ou WhatsApp
-  4. Decisão: animação leve (CSS/SVG) vs pesada (WebGL)
-  → Surgir esse lembrete no início da conversa. Remover quando resolvido.
+- **Bloqueadores resolvidos em 2026-07-01** (v1 do site em construção):
+  1. Serviços = 4 core (criação de site, GMB, Google Ads, Google Local), sem recorrência
+  2. Alvo = **todo o Brasil**, atendimento remoto (corrigido em 2026-07-04; antes era só RJ). Base física: Rio de Janeiro, RJ
+  3. Captação = WhatsApp (21) 96515-6359
+  4. Animação = fazer 2 versões e o dono escolhe
+  5. Preço = não vai no site ("peça orçamento"); escopo v1 = fatiado (Hero+Dor+Serviços+Como+CTA)

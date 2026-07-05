@@ -59,11 +59,13 @@ Moderno, geométrico, tech. Origami como conceito visual — formas anguladas, f
 - **logo-branco.png** — wordmark texto branco, fundo transparente (fundo escuro)
 - **logo-fundo-claro.png** — texto preto sobre fundo branco
 - **logo-fundo-escuro.png** — texto branco sobre fundo preto
-- **passaro.png** — master alta-res (2048px, 4.7MB) do beija-flor origami laranja, fundo transparente. **Fonte — não publicar direto na web.** Usar as versões otimizadas abaixo:
-  - **passaro-web.webp** (800px, ~28KB) — hero / uso geral web
-  - **passaro-hero.webp** (512px, ~22KB) — hero alternativo, elemento animado
+- **passaro.png** — master original (2048px). ⚠️ tinha o fundo xadrez **embutido nos pixels** (não era transparente de verdade). Não usar direto.
+- **passaro-nobg.png** — master **transparência real** (fundo removido por chroma-key da saturação). É a fonte oficial do beija-flor. Versões web geradas dele:
+  - **passaro-web.webp** (800px) — hero / uso geral web
+  - **passaro-hero.webp** (512px) — hero / elemento animado
   - **passaro-icon.png** (256px) — avatar / fonte de favicon
   - **favicon.png** (64px) — favicon do site
+- **logo-branco.png / logo-preta.png** — transparência real (fundo xadrez removido por chroma-key da logo-preta: texto por luminância + accent laranja por saturação). Branco = texto branco + E laranja pra fundo escuro; preta = texto preto + E laranja pra fundo claro. Versões web (~560px, 21KB) em `site/assets/`.
 - **Onde usar:** slide final do carrossel (CTA), header de propostas, slides de apresentação
 - **Tamanho sugerido:** largura entre 120-200px nos HTMLs
 

@@ -1,0 +1,98 @@
+:root {
+  --accent: #FF6600;
+  --bg-dark: #0D0D0D;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.font-heading {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+/* scroll reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* botões CTA */
+.btn-jemac {
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+.btn-jemac:hover {
+  transform: translateY(-2px) scale(1.03);
+  filter: brightness(1.1);
+  box-shadow: 0 8px 24px rgba(255, 102, 0, 0.4);
+}
+
+.btn-jemac:active {
+  transform: translateY(0) scale(0.97);
+  box-shadow: 0 4px 12px rgba(255, 102, 0, 0.3);
+}
+
+.btn-jemac:focus-visible {
+  outline: 2px solid #FF6600;
+  outline-offset: 3px;
+}
+
+/* card de portfólio */
+.case-card {
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.case-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255, 102, 0, 0.6);
+  box-shadow: 0 12px 32px rgba(255, 102, 0, 0.15);
+}
+
+.case-preview {
+  background: radial-gradient(ellipse at top, #2b1b3d 0%, #17102a 55%, #0d0d0d 100%);
+}
+
+/* FAQ accordion */
+.faq-item summary {
+  list-style: none;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item .faq-icon {
+  transition: transform 0.25s ease;
+}
+
+.faq-item[open] .faq-icon {
+  transform: rotate(45deg);
+}
+
+/* bird float on hero */
+.float-bird {
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-14px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    transition: none;
+    opacity: 1;
+    transform: none;
+  }
+  .float-bird {
+    animation: none;
+  }
+}
